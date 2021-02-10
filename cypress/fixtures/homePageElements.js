@@ -2,17 +2,17 @@ class HomePage {
     getSignUpNavButton() {
         return cy.get('[data-target="#signInModal"]');
     }
-    getSignInUserNameField() {
+    getSignUpUserNameField() {
         return cy.get('#sign-username');
     }
-    getSignInPasswordField() {
+    getSignUpPasswordField() {
         return cy.get('#sign-password');
     }
     getSignUpButton() {
         return cy.contains('Sign up');
     }
-    signInModalCloseX() {
-        return cy.get('button.close');
+    getSignUpModalCloseX() {
+        return cy.contains('Close');
     }
     getLoginNavButton() {
         return cy.get('[data-target="#logInModal"]');
@@ -28,6 +28,9 @@ class HomePage {
     }
     getCartNavButton() {
         return cy.get('#cartur');
+    }
+    getSignUpModal() {
+        return cy.get('#signInModalLabel');
     }       
 }
 export default HomePage
