@@ -2,13 +2,14 @@ Hi Vineti Folks!
 
 Thanks so much for reviewing my code challenge. 
 
-Before you run the tests, you'll need to fill in the "password" value in the cypress.json file. Here's how to do that:
-    1. Navigate to cypress.json.
-    2. Type "supersecret" as the value for "password." (I know. Hardcoding passwords ANYwhere in the repo is bad practice, but to save you time and headaches I chose not to mess       with env variables or secure password storage )
-    3. Save the changes (if your IDE doesn't do that automatically).
+This test suite handles passwords as environment variables. Here's how to access the password you'll need in order to construct the test script:
 
-To run headless tests:
-    $(npm bin)/cypress open
-To run tests in Chrome viewer:
-    $(npm bin)/cypress run
+1. Copy the password from here: https://docs.google.com/document/d/1j0oIErGByIcQV-r872lEe7vlfmUtYVFBLBFR5yHP_wo/edit?usp=sharing  
+2. To run tests via Cypress runner: CYPRESS_password=*password from step 1* npx cypress open
+3. To run headless tests: CYPRESS_password=*password from step 1* npx cypress run
 
+Note: I used google docs today just for simplicity's sake, but in the real world I'd definitely use a more secure password storage solution :) 
+
+Please let me know if you have any trouble running the tests.
+
+-Stephanie Franco
